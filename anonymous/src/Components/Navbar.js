@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 export default function Navbar(props) {
 
   return (
-    <nav className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}>
+    <nav className={`navbar navbar-expand-lg navbar-${props.mode==='light'?'light':'dark'} bg-${props.mode==='light'?'light':'dark'}`}>
         <div className="container-fluid">
             <a className="navbar-brand" href="/">{props.title}</a>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,11 +32,8 @@ export default function Navbar(props) {
                 <a className="nav-link disabled" href="/" aria-disabled="true">Disabled</a>
                 </li>
             </ul>
-            <button className={`btn btn-outline-${props.mode==='light'?"dark":"light"} mx-2`} onClick={props.toggleMode}>{props.mode==='light'?"dark":"light"}</button>
-            <form className="d-flex" role="search">
-                <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-                <button className="btn btn-outline-success" type="submit">Search</button>
-            </form>
+            <button className={`btn btn-outline-${props.mode==='light'?"success":"light"} mx-2`} onClick={props.toggleMode}>{props.mode==='light'?"Green":"light"}</button>
+            <button className={`btn btn-outline-${props.mode==='light'?"info":"light"} mx-2`} onClick={props.toggleBlue}>{props.mode==='light'?"Blue":"light"}</button>
             </div>
         </div>
     </nav>
