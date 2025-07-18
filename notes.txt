@@ -1,0 +1,16 @@
+Node.js is a javascript runtime environment which helps in using javascript outside the browsers.
+
+NPM is used to install packages permanently in the system while NPX is used to install them temporarily.
+When we generate react app with create-react-app, we use NPX as we want to do it only once in the start.
+
+Thunder Client - it is an alternative to postman (can be used to check APIs)
+
+export "something" should be imported with the same name unless used export default
+
+anything can be passed as props from App.js to the component it is callling in a way like html tag.
+
+PROPS
+props are some arguement we send to a component for getting something specfic at some place in the component.
+This way we can use same component with different values.
+propTypes - can be used to define the type of prop in a component. If the recieved props are not of the same type it shows warning.
+defaultprops - not working here, instead just mention the prop in the parameters of the component with the default value(like we do it in python)
