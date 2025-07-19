@@ -14,3 +14,6 @@ props are some arguement we send to a component for getting something specfic at
 This way we can use same component with different values.
 propTypes - can be used to define the type of prop in a component. If the recieved props are not of the same type it shows warning.
 defaultprops - not working here, instead just mention the prop in the parameters of the component with the default value(like we do it in python)
+
+
+npm run build converts the whole project into a static project which is a production ready build.
