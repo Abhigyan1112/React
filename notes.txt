@@ -17,3 +17,7 @@ defaultprops - not working here, instead just mention the prop in the parameters
 
 
 npm run build converts the whole project into a static project which is a production ready build.
+
+TextUtils : https://react-production-057f.up.railway.app/
+
+whatever you add in the content tag in the index.html, it affects the search of it in google, Should include words which people might search.
