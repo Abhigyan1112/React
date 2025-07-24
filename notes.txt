@@ -15,9 +15,49 @@ This way we can use same component with different values.
 propTypes - can be used to define the type of prop in a component. If the recieved props are not of the same type it shows warning.
 defaultprops - not working here, instead just mention the prop in the parameters of the component with the default value(like we do it in python)
 
+USE EFFECT
+UseEffect is used to define a method for variable for changing its value(state), whenever we need to change the value of the variable
+on the occurence of an event, we can call this function while passing the changing parameters to change the value.
+
 
 npm run build converts the whole project into a static project which is a production ready build.
 
 TextUtils : https://react-production-057f.up.railway.app/
 
 whatever you add in the content tag in the index.html, it affects the search of it in google, Should include words which people might search.
+
+
+
+
+
+
+
+
+
+CLASS BASED COMPONENT
+
+Class based components can be used in react to specify components like a class which can be extended.
+An object is created every time the class(component) is called.
+
+One can define values to variables with this.state in constructor or can define it with this.props.
+
+Props are used when the data in it does not change directly, it is taken just once when the page is rendered.
+State changes dynamically while being on the same page.
+
+Running Hierarchy
+1. Constructor
+2. render
+3. ComponentDidMount
+
+
+Component Life Cycle
+The series of events that happen from the mounting of your react component to its unmounting.
+
+Mounting - Birth of the Component
+Update - Growth of the component
+Unmount - Death of the Component
+
+In a class based Component, render() method has to be used to render the DOM. It runs during mounting and updating of component.
+ComponentDidMount runs after the component is mount by render method.
+ComponentDidUpdate runs after component is updated.
+ComponentWillUnmount runs before the component is to be unmounted.
